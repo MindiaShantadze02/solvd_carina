@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Github Page" parallel="methods" thread-count="3">
+  <test name="LoginTest">
+      <classes>
+          <class name="mshantadze.tests.ui.LoginTest" />
+      </classes>
+  </test>
+  <test name="Home Page">
+      <classes>
+          <class name="mshantadze.tests.ui.HomePageTest" />
+      </classes>
+  </test>
+</suite>

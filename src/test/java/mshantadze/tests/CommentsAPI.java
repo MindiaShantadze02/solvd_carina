@@ -14,7 +14,7 @@ import comments.PostCommentMethod;
 public class CommentsAPI implements IAbstractTest {
 	@Test()
 	@MethodOwner(owner = "MindiaShantadze")
-	public void testGetUser() {
+	public void testGetComments() {
 		GetCommentMethod getCommentMethod = new GetCommentMethod();
 		
 		getCommentMethod.callAPI();
@@ -24,7 +24,7 @@ public class CommentsAPI implements IAbstractTest {
 	
 	@Test
 	@MethodOwner(owner = "MindiaShantadze")
-	public void testPostUser() {
+	public void testPostComment() {
 		PostCommentMethod postCommentMethod = new PostCommentMethod();
 		
 		postCommentMethod.callAPI();
