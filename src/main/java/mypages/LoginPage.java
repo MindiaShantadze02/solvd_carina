@@ -9,10 +9,6 @@ import com.zebrunner.carina.utils.Configuration;
 import com.zebrunner.carina.utils.R;
 
 public class LoginPage extends AbstractPage {
-	private String login = "mshantadze.laba@solvd.com";
-	
-	private String password = "shantadze_02";
-	
 	@FindBy(xpath = "//a[contains(text(), 'Sign in')]")
 	ExtendedWebElement btnLoginHyperlink;
 	
@@ -27,18 +23,19 @@ public class LoginPage extends AbstractPage {
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
+		setPageAbsoluteURL("https://github.com/");
 	}
 	
 	public void goToLoginPage() {
 		btnLoginHyperlink.click();
 	}
 	
-	public void enterLogin() {
-		inptEmail.type(this.login);
+	public void enterLogin(String login) {
+		inptEmail.type(login);
 	}
 	
-	public void enterPassword() {
-		inptPassword.type(this.password);
+	public void enterPassword(String password) {
+		inptPassword.type(password);
 	}
 	
 	public void submit() {

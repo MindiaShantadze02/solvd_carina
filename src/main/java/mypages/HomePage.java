@@ -7,7 +7,7 @@ import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebEleme
 import com.qaprosoft.carina.core.gui.AbstractPage;
 
 public class HomePage extends AbstractPage {
-	@FindBy(xpath = "//a[contains(@aria-label,'Homepage')]")
+	@FindBy(xpath = "//a[contains(@class,'no-underline user-profile-link')]")
 	private ExtendedWebElement logo;
 	
 	public HomePage(WebDriver driver) {

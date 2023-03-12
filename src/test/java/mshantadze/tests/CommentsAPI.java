@@ -8,8 +8,8 @@ import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 
-import comments.GetCommentMethod;
-import comments.PostCommentMethod;
+import api.comments.GetCommentMethod;
+import api.comments.PostCommentMethod;
 
 public class CommentsAPI implements IAbstractTest {
 	@Test()
